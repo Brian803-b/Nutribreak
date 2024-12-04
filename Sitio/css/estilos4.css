@@ -1,0 +1,182 @@
+ *{
+padding:0; 
+margin:0;
+box-sizing:border-box; 
+} 
+body{
+	background:url("../fotos/Fondo.webp");
+	background-repeat:repeat;
+	font-family: "Delius", cursive;
+	font-weight: 400;
+	font-style: normal;
+	}
+.principal{
+	width:80%;
+	margin:0 auto;
+	background:#ffffff;
+}
+
+header{
+	width:100%;
+	height:450px;
+	background:url("../fotos/LOGO.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+header menu{
+	
+	background:rgba(2,2,2,.80);
+	padding:20px 10px;
+}
+
+menu .contenedor{
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+menu .contenedor .logo{
+	font-family: "Acme", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:25px;
+	color:#F4A261
+}
+
+menu .contenedor nav a{
+	color: orange;
+	text-decoration: none;
+	font-size:18px;
+	display:inline-block;
+	padding:12px 14px;
+	margin: 0 5px;
+}
+menu .contenedor nav a:hover{
+	text-decoration:underline;
+	color:white;
+}
+main .perfil{
+	width:250px;
+	height:250px;
+	background-position:gray;
+	border:6px solid #020202;
+	border-radius:50%;
+	margin-top:-95px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+main .perfil img {
+	width:100%;
+	border-radius:50%;
+}
+footer{
+	background:#284b63;
+	color:#ffffff;
+	text-align:center;
+	padding:25px;
+}
+ footer .negritas{
+	font-weight:bold;
+	text-align:left;
+	padding:20px;
+ }
+main .contenido{
+	Background:#ffffff;
+	font-size:18px;
+	font-style:italic;
+	margin-bottom:15px;
+	text-align:justify;
+	
+}
+
+main .contenido h1{
+	text-align:center;
+	font-size:35px;
+	margin:10px 0;
+}
+main .contacto{
+	background:"c1c1c1";
+	padding:50px 0;
+ }
+
+ main .contacto h3{
+	font-size:24px;
+	font-weight:bolder;
+	color:#EF476F;
+	margin:20px 0;
+	text-align:center;
+ }
+
+ main .contacto .caja .formulario{
+	width:96%;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+ }
+
+ main .formulario, .nombre, .email, .tel, .pais, .mensaje{
+	background:none;
+	border:none;
+	outline:none;
+	border-bottom: 1px solid gray;
+	padding:15px 20px; 
+	font-family: "calibri light";
+	font-size: 16px;
+	color:#020202;
+	transition: all 1s ease;
+	margin-bottom:20px;
+ }
+
+ main .formulario, .nombre, .email, .tel, .pais{
+	width:46%;
+	margin-bottom:20px;
+ }
+ main .formulario .mensaje{
+	width:96%;
+	min-height:100px;
+	max-height:500px;
+	min-width:96%;
+	max-width:96%;
+ }
+
+ main .formulario .nombre:focus,
+ main .formulario .email:focus,
+ main .formulario .tel:focus,
+ main .formulario .pais:focus,
+ main .formulario .mensaje:focus{
+	border-bottom: 3px solid #EF476F;
+ }
+
+ main .formulario .btn{
+	margin:auto;
+	padding: 15px 25px;
+	font-size:16px;
+	font-family: "calibri light";
+	font-weight:bolder;
+	border:none;
+	background:none;
+	background-color:#EF476F;
+	margin-bottom:20px;
+	border-radius: 5px;
+	cursor:pointer;
+ }
+
+ main .formulario .btn:hover{
+	background-color:#8B1C2C;
+ }
+
+ @media screen and (max-width:700px){
+	main .formulario, .nombre, .email, .tel, .pais, .mensaje{width:96%;}
+	menu .contenedor{
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:column;
+ }
+ 
